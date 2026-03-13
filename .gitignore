@@ -1,0 +1,13 @@
+# WordPress uploads and cache
+site/public_html/wp-content/uploads/
+site/public_html/wp-content/cache/
+site/public_html/wp-content/upgrade/
+site/public_html/wp-content/languages/
+site/public_html/wp-content/debug.log
+
+# WordPress config (contains passwords)
+site/public_html/wp-config.php
+
+# OS files
+.DS_Store
+Thumbs.db
