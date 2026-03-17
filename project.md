@@ -34,6 +34,19 @@
 | Главная страница | ID: 4051 («Главная»), собрана на Themify Builder |
 | Скины темы | black, green, orange, pink, purple, red, default |
 
+### Хостинг (продакшн)
+
+| Параметр | Значение |
+|---|---|
+| Хостинг | Beget (beget.com) |
+| Аккаунт | anbegefr |
+| Тарифный план | Blog (оплатить до 04.04.2026!) |
+| PHP | 8.3 |
+| MySQL | 5.7 (обновление до 8.0 запрошено) |
+| HTTPS | Включён (редирект HTTP → HTTPS) |
+| База данных | anbegefr_astro26 |
+| Путь на сервере | /home/a/anbegefr/astro-obzor.ru/public_html/ |
+
 ### Локальная среда
 
 | Параметр | Значение |
@@ -52,7 +65,7 @@
 
 ---
 
-## 4. Плагины WordPress (7 шт.)
+## 4. Плагины WordPress (8 шт.)
 
 | Плагин | Версия | Назначение |
 |---|---|---|
@@ -62,6 +75,7 @@
 | Cyr to Lat Enhanced | 3.7.3 | Транслитерация URL с кириллицы на латиницу |
 | Duplicator | 1.5.15 | Резервное копирование и миграция (хранить!) |
 | Themify Shortcodes | 2.1.4 | Библиотека шорткодов для темы Themify |
+| Яндекс Метрика | 1.2.2 | Счётчик Яндекс.Метрики (ID: 107738189) |
 | Yoast SEO | 27.2 | SEO-оптимизация, XML-карта сайта (/sitemap.xml) |
 
 ---
@@ -150,6 +164,7 @@
 | 17.03.2026 | Add CLAUDE.md и project.md |
 | 17.03.2026 | Fix site health: защита debug.log, чистка тем и плагинов, установка Yoast SEO 27.2 |
 | 17.03.2026 | Remove PS Auto Sitemap plugin (replaced by Yoast SEO sitemap) |
+| 17.03.2026 | Deploy to production: Beget hosting, PHP 8.3, HTTPS, Яндекс.Метрика |
 
 ---
 

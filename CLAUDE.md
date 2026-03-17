@@ -9,6 +9,7 @@
 
 Контентный WordPress-сайт об астрономии и космосе — **astro-obzor.ru**.
 CMS: WordPress 6.9.4 · Тема: Themify Magazine v1.9.7 + дочерняя magazine-child.
+Хостинг: **Beget** (anbegefr.beget.tech), PHP 8.3, MySQL 5.7 → 8.0 (в процессе).
 Локальная среда: **http://astro-obzor.local** (Local by Flywheel).
 Репозиторий: **Andrey-don/my-astro-obzor**, ветка master.
 Файлы WP в репо: `site/public_html/`.
@@ -19,15 +20,35 @@ CMS: WordPress 6.9.4 · Тема: Themify Magazine v1.9.7 + дочерняя mag
 
 | Параметр | Статус |
 |---|---|
+| Сайт на продакшне | ✓ Работает (https://astro-obzor.ru) |
 | Сайт локально | ✓ Работает (astro-obzor.local) |
 | WordPress 6.9.4 | ✓ Установлен |
 | Тема + дочерняя | ✓ Активны |
-| Плагины (7 шт.) | ✓ Все активны |
-| Yoast SEO 27.2 | ✓ Настроен (First-time configuration пройден) |
+| Плагины (8 шт.) | ✓ Все активны (+ Яндекс Метрика) |
+| Yoast SEO 27.2 | ✓ Настроен |
 | Здоровье сайта | ✓ Хорошо (зелёный) |
+| HTTPS | ✓ Включён (редирект HTTP → HTTPS на Beget) |
+| PHP | ✓ 8.3 (на хостинге Beget) |
+| MySQL | ⚠ 5.7 → запрос на обновление до 8.0 отправлен в Beget |
+| Яндекс.Метрика | ✓ Установлена, счётчик 107738189 |
 | debug.log | ✓ Закрыт (.htaccess + WP_DEBUG_LOG=false) |
-| Autoload БД | ✓ Очищен (2.4 МБ → 98 КБ, удалён мусор MonsterInsights) |
-| PHP | ⚠ 8.2.27 — обновить до 8.3 в Local WP |
+| Autoload БД | ✓ Очищен (2.4 МБ → 98 КБ) |
+
+---
+
+## Хостинг Beget
+
+| Параметр | Значение |
+|---|---|
+| Хостинг | Beget (beget.com) |
+| Аккаунт | anbegefr |
+| Сервер | anbegefr.beget.tech |
+| Тарифный план | Blog |
+| Оплата до | 04.04.2026 ⚠ (не забыть оплатить!) |
+| База данных | anbegefr_astro26 |
+| PHP | 8.3 |
+| MySQL | 5.7 (обновление до 8.0 запрошено) |
+| Путь на сервере | /home/a/anbegefr/astro-obzor.ru/public_html/ |
 
 ---
 
@@ -61,9 +82,10 @@ astro-obzor/
 
 - **Главная страница** собрана на Themify Builder (визуальный конструктор). При правках темы — проверять главную.
 - **Цикличные URL** (кириллица → латиница) обеспечивает плагин Cyr-to-Lat — не удалять.
-- **Sitemap** генерируется плагином PS Auto Sitemap, отдаётся на странице ID: 4097 (`/karta-sajta/`).
+- **Sitemap** генерируется Yoast SEO (`/sitemap.xml`).
 - **wp-config.php** исключён из Git. При переносе создавать из `wp-config-sample.php`.
 - **Медиафайлы** (`uploads/`) не в Git. При переносе копировать вручную или через Duplicator.
+- **Яндекс.Метрика** — счётчик 107738189, плагин «Яндекс Метрика» от Yandex.
 
 ---
 
@@ -80,7 +102,7 @@ astro-obzor/
 
 ## Быстрый старт для новой сессии
 
-1. Локальный сервер: запустить **Local WP** → сайт доступен на http://astro-obzor.local
-2. Рабочая папка: `C:/Users/profi/Documents/Project/astro-obzor`
-3. Проверить состояние: `git status` и `git log --oneline`
-4. Проверить сайт: `curl -s http://astro-obzor.local | head -5`
+1. Сайт на продакшне: **https://astro-obzor.ru**
+2. Локальный сервер (при необходимости): запустить **Local WP** → http://astro-obzor.local
+3. Рабочая папка: `C:/Users/profi/Documents/Project/astro-obzor`
+4. Проверить состояние: `git status` и `git log --oneline`
