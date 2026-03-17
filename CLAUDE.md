@@ -23,7 +23,7 @@ CMS: WordPress 6.9.4 · Тема: Themify Magazine v1.9.7 + дочерняя mag
 | WordPress 6.9.4 | ✓ Установлен |
 | Тема + дочерняя | ✓ Активны |
 | Плагины (8 шт.) | ✓ Все активны |
-| Yoast SEO 27.2 | ✓ Установлен и активен (настройка — следующий шаг) |
+| Yoast SEO 27.2 | ✓ Настроен (First-time configuration пройден) |
 | Здоровье сайта | ✓ Хорошо (зелёный) |
 | debug.log | ✓ Закрыт (.htaccess + WP_DEBUG_LOG=false) |
 | Autoload БД | ✓ Очищен (2.4 МБ → 98 КБ, удалён мусор MonsterInsights) |
