@@ -52,17 +52,18 @@
 
 ---
 
-## 4. Плагины WordPress (7 шт.)
+## 4. Плагины WordPress (8 шт.)
 
 | Плагин | Версия | Назначение |
 |---|---|---|
 | Akismet | 5.6 | Защита от спама в комментариях и формах |
-| Classic Editor | — | Классический редактор WordPress |
+| Classic Editor | 1.6.7 | Классический редактор WordPress |
 | Contact Form 7 | 6.1.5 | Формы обратной связи (страница «Контакты») |
-| Cyr-to-Lat | — | Транслитерация URL с кириллицы на латиницу |
+| Cyr to Lat Enhanced | 3.7.3 | Транслитерация URL с кириллицы на латиницу |
 | Duplicator | 1.5.15 | Резервное копирование и миграция (хранить!) |
-| PS Auto Sitemap | — | Автоматическая карта сайта (ID страницы: 4097) |
-| Themify Shortcodes | — | Библиотека шорткодов для темы Themify |
+| PS Auto Sitemap | 1.1.9 | Автоматическая карта сайта (ID страницы: 4097) |
+| Themify Shortcodes | 2.1.4 | Библиотека шорткодов для темы Themify |
+| Yoast SEO | 27.2 | SEO-оптимизация, XML-карта сайта |
 
 ---
 
@@ -148,6 +149,7 @@
 | 13.03.2026 | Initial commit: astro-obzor.ru WordPress site |
 | 17.03.2026 | Add project passport (HTML) |
 | 17.03.2026 | Add CLAUDE.md и project.md |
+| 17.03.2026 | Fix site health: защита debug.log, чистка тем и плагинов, установка Yoast SEO 27.2 |
 
 ---
 
