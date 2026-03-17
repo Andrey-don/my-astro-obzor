@@ -1,5 +1,13 @@
 # This file was updated by Duplicator on 2026-03-13 09:18:29.
 # See the original_files_ folder for the original source_site_htaccess file.
+
+# BEGIN Security
+<Files "debug.log">
+    Order allow,deny
+    Deny from all
+</Files>
+# END Security
+
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
