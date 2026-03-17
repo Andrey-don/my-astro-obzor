@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { font-family: "Times New Roman", serif; font-size: 12pt; margin: 2cm 2.5cm; color: #000; }
+  h1 { text-align: center; font-size: 16pt; margin-bottom: 4px; }
+  h2 { font-size: 13pt; border-bottom: 2px solid #000; padding-bottom: 4px; margin-top: 28px; }
+  .subtitle { text-align: center; font-size: 12pt; margin-top: 0; margin-bottom: 24px; color: #333; }
+  table.t { width: 100%; border-collapse: collapse; margin: 8px 0 16px 0; }
+  table.t td { border: 1px solid #000; padding: 7px 10px; vertical-align: top; font-size: 11pt; }
+  table.t th { border: 1px solid #000; padding: 7px 10px; background-color: #d0d0d0; text-align: center; font-size: 11pt; font-weight: bold; }
+  td.lbl { width: 35%; font-weight: bold; background-color: #f0f0f0; }
+  td.val { width: 65%; }
+  .ok { color: #006400; font-weight: bold; }
+  .warn { color: #8B6914; font-weight: bold; }
+  ul { margin: 4px 0; padding-left: 20px; }
+  li { margin-bottom: 3px; }
+  .updated { text-align: right; font-size: 10pt; color: #555; font-style: italic; margin-top: 30px; }
+  .section-note { font-size: 10pt; font-style: italic; color: #555; margin: 4px 0 8px 0; }
+</style>
+</head>
+<body>
+
+<h1>ПАСПОРТ ПРОЕКТА</h1>
+<p class="subtitle">Сайт <strong>https://astro-obzor.ru</strong> — «Астро-Обзор: новости про космос и вселенную»</p>
+
+<!-- ====================== 1. ОБЩАЯ ИНФОРМАЦИЯ ====================== -->
+<h2>1. Общая информация о проекте</h2>
+<table class="t">
+  <tr><td class="lbl">Название сайта</td><td class="val">Астро-Обзор</td></tr>
+  <tr><td class="lbl">Тематика</td><td class="val">Астрономия, космос, новости о Вселенной, планетах, МКС, ракетоносителях, колонизации Марса</td></tr>
+  <tr><td class="lbl">Сайт (продакшн)</td><td class="val"><a href="https://astro-obzor.ru">https://astro-obzor.ru</a></td></tr>
+  <tr><td class="lbl">Контактный e-mail</td><td class="val">admin@astro-obzor.ru</td></tr>
+  <tr><td class="lbl">Владелец / разработчик</td><td class="val">Andrey-don</td></tr>
+</table>
+
+<!-- ====================== 2. ТЕХНИЧЕСКАЯ ИНФРАСТРУКТУРА ====================== -->
+<h2>2. Техническая инфраструктура</h2>
+<table class="t">
+  <tr><th colspan="2">CMS и тема</th></tr>
+  <tr><td class="lbl">CMS</td><td class="val">WordPress 6.9.4</td></tr>
+  <tr><td class="lbl">Тема (родительская)</td><td class="val">Themify Magazine v1.9.7</td></tr>
+  <tr><td class="lbl">Дочерняя тема</td><td class="val">magazine-child</td></tr>
+  <tr><td class="lbl">Папки тем</td><td class="val">wp-content/themes/magazine/ и wp-content/themes/magazine-child/</td></tr>
+  <tr><td class="lbl">Главная страница</td><td class="val">ID: 4051 («Главная»), шаблон: page-default, Builder Themify</td></tr>
+  <tr><td class="lbl">Скины темы</td><td class="val">Доступны: black, green, orange, pink, purple, red, default</td></tr>
+
+  <tr><th colspan="2">Локальная среда разработки</th></tr>
+  <tr><td class="lbl">Local WP</td><td class="val">Локальный сервер (Local by Flywheel)</td></tr>
+  <tr><td class="lbl">Локальный URL</td><td class="val">http://astro-obzor.local</td></tr>
+
+  <tr><th colspan="2">Репозиторий</th></tr>
+  <tr><td class="lbl">Git (локальный)</td><td class="val">C:/Users/profi/Documents/Project/astro-obzor</td></tr>
+  <tr><td class="lbl">Структура в репо</td><td class="val">site/public_html/</td></tr>
+  <tr><td class="lbl">GitHub</td><td class="val">Andrey-don/my-astro-obzor</td></tr>
+  <tr><td class="lbl">Ветка</td><td class="val">master</td></tr>
+</table>
+
+<!-- ====================== 3. ПЛАГИНЫ ====================== -->
+<h2>3. Плагины WordPress</h2>
+<table class="t">
+  <tr><th>Плагин</th><th>Версия</th><th>Статус</th><th>Назначение</th></tr>
+  <tr>
+    <td>Akismet</td><td>5.6</td>
+    <td class="ok">Активен ✓</td>
+    <td>Защита от спама в комментариях и формах</td>
+  </tr>
+  <tr>
+    <td>Classic Editor</td><td>—</td>
+    <td class="ok">Активен ✓</td>
+    <td>Классический редактор WordPress</td>
+  </tr>
+  <tr>
+    <td>Contact Form 7</td><td>6.1.5</td>
+    <td class="ok">Активен ✓</td>
+    <td>Формы обратной связи (страница «Контакты»)</td>
+  </tr>
+  <tr>
+    <td>Cyr-to-Lat (cyr3lat)</td><td>—</td>
+    <td class="ok">Активен ✓</td>
+    <td>Транслитерация URL с кириллицы на латиницу</td>
+  </tr>
+  <tr>
+    <td>Duplicator</td><td>1.5.15</td>
+    <td class="warn">Хранить ✓</td>
+    <td>Резервное копирование и миграция на хостинг</td>
+  </tr>
+  <tr>
+    <td>PS Auto Sitemap</td><td>—</td>
+    <td class="ok">Активен ✓</td>
+    <td>Автоматическая карта сайта (страница «Карта сайта», ID: 4097)</td>
+  </tr>
+  <tr>
+    <td>Themify Shortcodes</td><td>—</td>
+    <td class="ok">Активен ✓</td>
+    <td>Библиотека шорткодов для темы Themify Magazine</td>
+  </tr>
+</table>
+
+<!-- ====================== 4. СТРУКТУРА КОНТЕНТА ====================== -->
+<h2>4. Структура контента сайта</h2>
+<table class="t">
+  <tr><th colspan="2">Страницы</th></tr>
+  <tr><td class="lbl">Главная</td><td class="val">ID: 4051 — Builder-страница с блоками категорий</td></tr>
+  <tr><td class="lbl">О нас</td><td class="val">ID: 52 — /o-nas/</td></tr>
+  <tr><td class="lbl">Контакты</td><td class="val">ID: 54 — /contact/</td></tr>
+  <tr><td class="lbl">Карта сайта</td><td class="val">ID: 4097 — /karta-sajta/</td></tr>
+  <tr><td class="lbl">Политика конфиденциальности</td><td class="val">ID: 3</td></tr>
+
+  <tr><th colspan="2">Основные рубрики (категории)</th></tr>
+  <tr><td class="lbl">Новости планеты</td><td class="val">58 постов</td></tr>
+  <tr><td class="lbl">Ракетоносители</td><td class="val">41 пост</td></tr>
+  <tr><td class="lbl">Колонизация Марса</td><td class="val">16 постов</td></tr>
+  <tr><td class="lbl">Видео космос</td><td class="val">16 постов</td></tr>
+  <tr><td class="lbl">МКС</td><td class="val">12 постов</td></tr>
+  <tr><td class="lbl">Звёздные скопления</td><td class="val">11 постов</td></tr>
+  <tr><td class="lbl">Космодромы мира</td><td class="val">9 постов</td></tr>
+  <tr><td class="lbl">Планеты Солнечной системы</td><td class="val">14 постов</td></tr>
+  <tr><td class="lbl">Дальний космос</td><td class="val">14 постов</td></tr>
+  <tr><td class="lbl">Галактики</td><td class="val">5 постов</td></tr>
+  <tr><td class="lbl">Вселенная</td><td class="val">3 поста</td></tr>
+  <tr><td class="lbl">Астероиды, болиды, метеориты</td><td class="val">10 постов</td></tr>
+  <tr><td class="lbl">Космос будущее</td><td class="val">11 постов</td></tr>
+  <tr><td class="lbl">Обои на рабочий стол (космос)</td><td class="val">3 поста</td></tr>
+  <tr><td class="lbl">Космические термины</td><td class="val">4 поста</td></tr>
+
+  <tr><th colspan="2">Навигационное меню</th></tr>
+  <tr><td class="lbl">Top Menu</td><td class="val">Главная, О нас, Контакты, Карта сайта</td></tr>
+</table>
+
+<!-- ====================== 5. SEO И ROBOTS ====================== -->
+<h2>5. SEO и индексация</h2>
+<table class="t">
+  <tr><td class="lbl">robots.txt</td><td class="val">Настроен вручную — отдельные директивы для Googlebot, Yandex, Mail.Ru</td></tr>
+  <tr><td class="lbl">Карта сайта</td><td class="val">https://astro-obzor.ru/sitemap.xml (генерируется PS Auto Sitemap)</td></tr>
+  <tr><td class="lbl">Русские поисковики</td><td class="val">robots.txt оптимизирован под Яндекс и Mail.Ru</td></tr>
+  <tr><td class="lbl">Фавиконка</td><td class="val">wp-content/uploads/2019/02/favicon-3.ico</td></tr>
+  <tr><td class="lbl">Логотип</td><td class="val">wp-content/uploads/2019/02/LogoAstroObzor-277.png</td></tr>
+</table>
+
+<!-- ====================== 6. GITIGNORE — ЧТО ХРАНИТСЯ В РЕПО ====================== -->
+<h2>6. Что хранится в Git-репозитории</h2>
+<table class="t">
+  <tr><th>Включено в репо</th><th>Исключено (.gitignore)</th></tr>
+  <tr>
+    <td>
+      <ul>
+        <li>wp-content/themes/magazine/</li>
+        <li>wp-content/themes/magazine-child/</li>
+        <li>wp-content/plugins/ (все 7 плагинов)</li>
+        <li>.htaccess</li>
+        <li>robots.txt</li>
+        <li>wp-config-sample.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>wp-content/uploads/ (медиафайлы)</li>
+        <li>wp-content/cache/</li>
+        <li>wp-content/upgrade/</li>
+        <li>wp-content/languages/</li>
+        <li>wp-content/debug.log</li>
+        <li>wp-config.php (пароли БД)</li>
+        <li>.DS_Store, Thumbs.db</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+<p class="section-note">⚠ wp-config.php не хранится в репозитории — содержит учётные данные БД. Хранить отдельно.</p>
+
+<!-- ====================== 7. ТЕКУЩИЙ СТАТУС ====================== -->
+<h2>7. Текущий статус сайта (март 2026)</h2>
+<table class="t">
+  <tr><th style="width:40%;">Параметр</th><th>Статус</th></tr>
+  <tr><td>Главная страница</td><td class="ok">Работает ✓</td></tr>
+  <tr><td>WordPress 6.9.4</td><td class="ok">Установлен ✓</td></tr>
+  <tr><td>Локальная среда (astro-obzor.local)</td><td class="ok">Работает ✓</td></tr>
+  <tr><td>Тема Themify Magazine + дочерняя</td><td class="ok">Активна ✓</td></tr>
+  <tr><td>Контент (посты, категории)</td><td class="ok">Присутствует ✓</td></tr>
+  <tr><td>Плагины (7 шт.)</td><td class="ok">Установлены ✓</td></tr>
+  <tr><td>robots.txt / sitemap</td><td class="ok">Настроены ✓</td></tr>
+  <tr><td>PHP-ошибки на фронтенде</td><td class="ok">Не обнаружены ✓</td></tr>
+</table>
+
+<!-- ====================== 8. ВАЖНЫЕ ПРЕДУПРЕЖДЕНИЯ ====================== -->
+<h2>8. Важные предупреждения</h2>
+<table class="t">
+  <tr>
+    <td style="color:#8B0000; font-weight:bold;">⚠ wp-config.php</td>
+    <td>Файл исключён из репозитория. Содержит учётные данные базы данных. Хранить отдельно и не коммитить.</td>
+  </tr>
+  <tr>
+    <td style="color:#8B0000; font-weight:bold;">⚠ Медиафайлы</td>
+    <td>Папка wp-content/uploads/ исключена из Git. При переносе на новый сервер переносить отдельно (вручную или через Duplicator).</td>
+  </tr>
+  <tr>
+    <td style="color:#8B6914; font-weight:bold;">⚠ Резервные копии</td>
+    <td>Перед обновлением WordPress или плагинов создавать резервную копию через Duplicator (плагин установлен).</td>
+  </tr>
+  <tr>
+    <td style="color:#8B6914; font-weight:bold;">⚠ Themify Builder</td>
+    <td>Главная страница собрана на Themify Builder. При обновлении темы Magazine проверять отображение главной страницы.</td>
+  </tr>
+</table>
+
+<!-- ====================== 9. ИСТОРИЯ КОММИТОВ ====================== -->
+<h2>9. История Git-коммитов</h2>
+<table class="t">
+  <tr><th style="width:15%;">Дата</th><th>Коммит</th><th style="width:20%;">Статус</th></tr>
+  <tr>
+    <td>13.03.2026</td>
+    <td>Initial commit: astro-obzor.ru WordPress site — первоначальный снимок сайта (темы, плагины, конфигурация)</td>
+    <td class="ok">Выполнено ✓</td>
+  </tr>
+  <tr>
+    <td>17.03.2026</td>
+    <td>Добавлен паспорт проекта (этот документ)</td>
+    <td class="ok">Выполнено ✓</td>
+  </tr>
+</table>
+
+<p class="updated">Документ обновлён: 17 марта 2026 г.</p>
+
+</body>
+</html>
