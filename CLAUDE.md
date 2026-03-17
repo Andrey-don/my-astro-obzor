@@ -22,7 +22,7 @@ CMS: WordPress 6.9.4 · Тема: Themify Magazine v1.9.7 + дочерняя mag
 | Сайт локально | ✓ Работает (astro-obzor.local) |
 | WordPress 6.9.4 | ✓ Установлен |
 | Тема + дочерняя | ✓ Активны |
-| Плагины (8 шт.) | ✓ Все активны |
+| Плагины (7 шт.) | ✓ Все активны |
 | Yoast SEO 27.2 | ✓ Настроен (First-time configuration пройден) |
 | Здоровье сайта | ✓ Хорошо (зелёный) |
 | debug.log | ✓ Закрыт (.htaccess + WP_DEBUG_LOG=false) |
@@ -44,7 +44,7 @@ astro-obzor/
 │           ├── themes/
 │           │   ├── magazine/         # Родительская тема Themify Magazine
 │           │   └── magazine-child/   # Дочерняя тема (кастомизация)
-│           └── plugins/              # 7 плагинов
+│           └── plugins/              # 7 плагинов (без PS Auto Sitemap)
 ├── CLAUDE.md                 # Этот файл
 ├── project.md                # Паспорт проекта
 └── ПАСПОРТ_ПРОЕКТА_astro-obzor.ru.html

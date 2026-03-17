@@ -52,7 +52,7 @@
 
 ---
 
-## 4. Плагины WordPress (8 шт.)
+## 4. Плагины WordPress (7 шт.)
 
 | Плагин | Версия | Назначение |
 |---|---|---|
@@ -61,9 +61,8 @@
 | Contact Form 7 | 6.1.5 | Формы обратной связи (страница «Контакты») |
 | Cyr to Lat Enhanced | 3.7.3 | Транслитерация URL с кириллицы на латиницу |
 | Duplicator | 1.5.15 | Резервное копирование и миграция (хранить!) |
-| PS Auto Sitemap | 1.1.9 | Автоматическая карта сайта (ID страницы: 4097) |
 | Themify Shortcodes | 2.1.4 | Библиотека шорткодов для темы Themify |
-| Yoast SEO | 27.2 | SEO-оптимизация, XML-карта сайта |
+| Yoast SEO | 27.2 | SEO-оптимизация, XML-карта сайта (/sitemap.xml) |
 
 ---
 
@@ -111,7 +110,7 @@
 | Параметр | Значение |
 |---|---|
 | robots.txt | Настроен вручную — директивы для Googlebot, Yandex, Mail.Ru |
-| Карта сайта | https://astro-obzor.ru/sitemap.xml (PS Auto Sitemap) |
+| Карта сайта | https://astro-obzor.ru/sitemap.xml (Yoast SEO) |
 | Фавиконка | `wp-content/uploads/2019/02/favicon-3.ico` |
 | Логотип | `wp-content/uploads/2019/02/LogoAstroObzor-277.png` |
 
@@ -122,7 +121,7 @@
 ### Включено в репозиторий
 - `wp-content/themes/magazine/`
 - `wp-content/themes/magazine-child/`
-- `wp-content/plugins/` (все 7 плагинов)
+- `wp-content/plugins/` (все 7 плагинов: без PS Auto Sitemap)
 - `.htaccess`, `robots.txt`, `wp-config-sample.php`
 
 ### Исключено (.gitignore)
@@ -150,6 +149,7 @@
 | 17.03.2026 | Add project passport (HTML) |
 | 17.03.2026 | Add CLAUDE.md и project.md |
 | 17.03.2026 | Fix site health: защита debug.log, чистка тем и плагинов, установка Yoast SEO 27.2 |
+| 17.03.2026 | Remove PS Auto Sitemap plugin (replaced by Yoast SEO sitemap) |
 
 ---
 
